@@ -1,0 +1,16 @@
+export const ValidationErrors = {
+  ALPHANUMERIC_ENG: 'این فیلد باید فقط شامل حروف یا اعداد انگلیسی باشد',
+  DATE: 'این فیلد باید از نوع تاریخ باشد',
+  LENGTH: ({ length }: { length: number }) => `این فیلد باید دقیقا ${length} کاراکتر باشد`,
+  LENGTH_NUMBER: ({ length }: { length: number }) => `این فیلد باید دقیقا ${length} رقم باشد`,
+  MATCH: (refFieldTitle: string) => `این فیلد باید با ${refFieldTitle} یکسان باشد`,
+  MAX: ({ max }: { max: number }) => `مقدار این فیلد نباید بیشتر از ${max} باشد`,
+  MAX_CHAR: ({ max }: { max: number }) => `این فیلد نباید بیشتر از ${max} کاراکتر باشد`,
+  MIN: ({ min }: { min: number }) => `مقدار این فیلد نباید کمتر از ${min} باشد`,
+  MIN_CHAR: ({ min }: { min: number }) => `این فیلد نباید کمتر از ${min} کاراکتر باشد`,
+  MIN_DATE: (fieldName: string) => `تاریخ انتخابی باید دیرتر از ${fieldName} باشد`,
+  MOBILE: 'شماره موبایل معتبر نمی‌باشد',
+  NUMBER: 'این فیلد باید از نوع عدد باشد',
+  ONE_OF: 'مقدار این فیلد باید از مقادیر تعریف شده باشد',
+  REQUIRED: 'this field is required',
+};
